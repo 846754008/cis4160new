@@ -41,7 +41,7 @@
                         $row = mysqli_fetch_assoc($result);
                         if($row['email'] === $email && $row['password'] === $password){
                             echo "logged in!";
-                            header("Location: main.php");
+                            header("Location: afterlogout.php");
                         }else{
                             //if false it will display the error message
                                 header("Location: login.php?error=Sorry, we don't recognize that email or password. Try again!");
