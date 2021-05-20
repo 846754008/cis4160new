@@ -1,3 +1,8 @@
+
+<?php
+    include 'mysqli_connect1.php';
+    ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -42,17 +47,21 @@
         <!-- this is for the search bar body-->
         <div class = "seconddiv"> 
             <!-- naviagte to another page -->
-            <form class = "searchbar" action = "action??????.php" method="GET">  
+            <form class = "searchbar" action = "search.php" method="POST">  
             <!-- <form action = "action.php">       -->
             
-                <input type = "search" placeholder = "Find a Recipe" name = "search2" >
-                <button type = "submit"><i class="fa fa-search"></i></button>
+                <input type = "search" placeholder = "Find a Recipe" name = "search" >
+                <button type = "submit" name="submit-search"><i class="fa fa-search"></i></button>
             </form>
             
             <!-- bottom side -->
 
             <!-- right side -->
-            <span><img class = "searchbody" src = "searchbarbody.PNG"></span>
+            <span><a href = 'recipe.html'><img class = "searchbody" src = "gchicken.PNG" width = "100px"></a>
+            <a href = 'AllrecipesSalmon-main/recipe.html'><img class = "searchbody" src = "i2.PNG" width = "120px"></a>
+            <a href = 'AllrecipesPork-main/recipe.html'><img class = "searchbody" src = "i3.PNG" width = "120px"></a>
+            <a href = 'AllrecipesPasta-main/recipe.html'><img class = "searchbody" src = "i4.PNG" width = "120px">
+            </span>
          
         </div>
         <!-- <div class = "clearboth"></div>  -->
